@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow: hidden;
+    body {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        .text-area {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 100px;
+            width: 100%;
+            z-index: 1;
+            .top {
+                position: absolute;
+                box-sizing: border-box;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 50px;
+                font-size: 1.5rem;
+                letter-spacing: 10px;
+                word-spacing: 15px;
+            }
+            .border {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 400px;
+                height: 1px;
+                background-color: black;
+            }
+            .bottom {
+                position: absolute;
+                box-sizing: border-box;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                height: 50px;
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                line-height: 50px;
+                font-size: 1rem;
+                letter-spacing: 10px;
+            }
+        }
+        .background {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            perspective: 1000px;
+            .background-top-right {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                top: 0;
+                right: 0;
+                animation-name: background-top-right;
+                animation-delay: 0.5s;
+                animation-duration: 1s;
+                animation-timing-function: cubic-bezier(.03, .63, .5, .99);
+                animation-fill-mode: both;
+                will-change: animation;
+                .one {
+                    position: absolute;
+                    transform-origin: center;
+                    top: 50px;
+                    right: 20px;
+                    width: 100px;
+                    transform: rotateZ(45deg);
+                }
+                .two {
+                    position: absolute;
+                    transform-origin: center;
+                    top: 30px;
+                    right: -60px;
+                    width: 54px;
+                    transform: rotateZ(45deg);
+                }
+                .three {
+                    position: absolute;
+                    transform-origin: center;
+                    top: 4px;
+                    right: 84px;
+                    width: 139px;
+                    transform: rotateZ(45deg);
+                }
+                .four {
+                    position: absolute;
+                    transform-origin: center;
+                    top: -386px;
+                    right: -124px;
+                    width: 139px;
+                    transform: rotateZ(45deg);
+                }
+                .five {
+                    position: absolute;
+                    transform-origin: center;
+                    top: -396px;
+                    right: -21px;
+                    width: 139px;
+                    transform: rotateZ(45deg);
+                }
+                .six {
+                    position: absolute;
+                    transform-origin: center;
+                    top: -106px;
+                    right: 206px;
+                    width: 229px;
+                }
+                .seven {
+                    position: absolute;
+                    transform-origin: center;
+                    top: 279px;
+                    right: 47px;
+                    width: 78px;
+                    transform: rotateZ(45deg);
+                }
+                .eight {
+                    position: absolute;
+                    transform-origin: center;
+                    top: 284px;
+                    right: 214px;
+                    width: 61px;
+                    transform: rotateZ(45deg);
+                }
+                .nine {
+                    position: absolute;
+                    transform-origin: center;
+                    top: -19px;
+                    right: 246px;
+                    width: 41px;
+                    transform: rotateZ(45deg);
+                }
+            }
+            .background-bottom-left {
+                position: absolute;
+                width: 100vw;
+                height: 100vh;
+                bottom: 0;
+                left: 0;
+                animation-name: background-bottom-left;
+                animation-delay: 0.5s;
+                animation-duration: 1s;
+                animation-timing-function: cubic-bezier(.03, .63, .5, .99);
+                animation-fill-mode: both;
+                will-change: animation;
+                .one {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: -171px;
+                    left: 22px;
+                    width: 126px;
+                    transform: rotateZ(45deg);
+                }
+                .two {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: -128px;
+                    left: 85px;
+                    width: 126px;
+                    transform: rotateZ(45deg);
+                }
+                .three {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: 118px;
+                    left: 293px;
+                    width: 55px;
+                    transform: rotateZ(45deg);
+                }
+                .four {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: 172px;
+                    left: 212px;
+                    width: 102px;
+                    transform: rotateZ(45deg);
+                }
+                .five {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: 228px;
+                    left: 189px;
+                    width: 29px;
+                    transform: rotateZ(45deg);
+                }
+                .six {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: -2px;
+                    left: -2px;
+                    width: 95px;
+                    transform: rotateZ(45deg);
+                }
+                .seven {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: 90px;
+                    left: 36px;
+                    width: 49px;
+                    transform: rotateZ(45deg);
+                }
+                .eight {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: -64px;
+                    left: -47px;
+                    width: 49px;
+                    transform: rotateZ(45deg);
+                }
+                .nine {
+                    position: absolute;
+                    transform-origin: center;
+                    bottom: 67px;
+                    left: -38px;
+                    width: 49px;
+                    transform: rotateZ(45deg);
+                }
+            }
+        }
+        .black {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #2a2b3d;
+            animation-name: black;
+            animation-delay: 0.5s;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(.18, .53, .08, .99);
+            animation-fill-mode: both;
+            will-change: animation;
+            z-index: 2;
+        }
+    }
+}
+
+@keyframes black {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes background-top-right {
+    0% {
+        top: 50vh;
+        right: 50vw;
+        transform: translate3d(0, 0, 600px);
+    }
+    100% {
+        top: 0;
+        right: 0;
+    }
+}
+
+@keyframes background-bottom-left {
+    0% {
+        bottom: 50vh;
+        left: 50vw;
+        transform: translate3d(0, 0, 600px);
+    }
+    100% {
+        bottom: 0;
+        left: 0;
+    }
+}
